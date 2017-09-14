@@ -70,8 +70,6 @@ F 3 "" H 7050 3750 50  0001 C CNN
 	1    7050 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7050 3650 7050 3750
 $Comp
 L R R1
 U 1 1 59AF08DA
@@ -84,10 +82,6 @@ F 4 "completar" V 7050 3150 60  0001 C CNN "MPN"
 	1    7050 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7050 3300 7050 3350
-Wire Wire Line
-	7050 3000 7050 2750
 $Sheet
 S 4500 2550 1000 400 
 U 59AF0EB0
@@ -96,10 +90,6 @@ F1 "switching_supply.sch" 60
 F2 "VIN" I L 4500 2750 60 
 F3 "VOUT" O R 5500 2750 60 
 $EndSheet
-Wire Wire Line
-	3000 2750 4500 2750
-Wire Wire Line
-	7050 2750 5500 2750
 $Comp
 L USB_C_Plug P1
 U 1 1 59B19F80
@@ -108,20 +98,10 @@ F 0 "P1" H 2000 5500 50  0000 L CNN
 F 1 "USB_C_Plug" H 2800 5500 50  0000 R CNN
 F 2 "Connectors_USB:USB_C_Plug_Molex_105444" H 2550 4050 50  0001 C CNN
 F 3 "" H 2550 4050 50  0001 C CNN
+F 4 "105444-0001" H 2400 4050 60  0001 C CNN "MPN"
 	1    2400 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3000 2850 3200 2850
-Wire Wire Line
-	3200 2750 3200 3050
-Connection ~ 3200 2750
-Wire Wire Line
-	3200 2950 3000 2950
-Connection ~ 3200 2850
-Wire Wire Line
-	3200 3050 3000 3050
-Connection ~ 3200 2950
 $Comp
 L GND #PWR02
 U 1 1 59B1A165
@@ -133,8 +113,41 @@ F 3 "" H 2300 5750 50  0001 C CNN
 	1    2300 5750
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3000 3250
+NoConn ~ 3000 3350
+NoConn ~ 3000 4050
+NoConn ~ 3000 4150
+NoConn ~ 3000 4350
+NoConn ~ 3000 4450
+NoConn ~ 3000 4650
+NoConn ~ 3000 4750
+NoConn ~ 3000 4950
+NoConn ~ 3000 5050
+NoConn ~ 3000 5250
+NoConn ~ 3000 5350
 Wire Wire Line
-	2300 5750 2300 5650
+	7050 3650 7050 3750
+Wire Wire Line
+	7050 3300 7050 3350
+Wire Wire Line
+	7050 3000 7050 2750
+Wire Wire Line
+	3000 2750 4500 2750
+Wire Wire Line
+	7050 2750 5500 2750
+Wire Wire Line
+	3000 2850 3200 2850
+Wire Wire Line
+	3200 2750 3200 3050
+Connection ~ 3200 2750
+Wire Wire Line
+	3200 2950 3000 2950
+Connection ~ 3200 2850
+Wire Wire Line
+	3200 3050 3000 3050
+Connection ~ 3200 2950
+Wire Wire Line
+	2300 5650 2300 5750
 Wire Wire Line
 	2200 5650 2200 5700
 Wire Wire Line
@@ -154,16 +167,4 @@ Wire Wire Line
 Wire Wire Line
 	2100 5650 2100 5700
 Connection ~ 2200 5700
-NoConn ~ 3000 3250
-NoConn ~ 3000 3350
-NoConn ~ 3000 4050
-NoConn ~ 3000 4150
-NoConn ~ 3000 4350
-NoConn ~ 3000 4450
-NoConn ~ 3000 4650
-NoConn ~ 3000 4750
-NoConn ~ 3000 4950
-NoConn ~ 3000 5050
-NoConn ~ 3000 5250
-NoConn ~ 3000 5350
 $EndSCHEMATC

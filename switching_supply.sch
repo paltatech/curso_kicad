@@ -47,7 +47,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3600 3050 0    60   Input ~ 0
+Text HLabel 3000 3050 0    60   Input ~ 0
 VIN
 Text HLabel 7550 3050 2    60   Output ~ 0
 VOUT
@@ -202,4 +202,18 @@ F 3 "" H 7300 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7300 3050
+$Comp
+L Polyfuse F1
+U 1 1 59BA7D61
+P 3450 3050
+F 0 "F1" V 3225 3050 50  0000 C CNN
+F 1 "Polyfuse" V 3316 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 3500 2850 50  0001 L CNN
+F 3 "" H 3450 3050 50  0001 C CNN
+F 4 "0" H 3450 3050 60  0001 C CNN "Exclude from BOM"
+	1    3450 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3050 3000 3050
 $EndSCHEMATC
