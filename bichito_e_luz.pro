@@ -1,4 +1,4 @@
-update=9/7/2017 11:37:21 AM
+update=jue 14 sep 2017 15:58:25 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,13 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=C:/Users/User/Documents/curso
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=260
+ERC_TestSimilarLabels=1
